@@ -1,0 +1,17 @@
+--build standart docker file by Visual Studio
+docker build -f KuberSimpleApp/Dockerfile .
+
+--build standart docker file by Visual Studio with tag
+docker build -t eugenemukhanov/kubertest:imagename -f KuberSimpleApp/Dockerfile .
+
+--run docker container
+docker run -it --rm -p 80:80 --name makubeapp eugenemukhanov/kubertest:kubeappv1 
+
+--login to hub
+docker login --username=******
+
+--push to hub
+docker image push eugenemukhanov/kubertest:kubeappv1 
+
+--remove all resources
+docker system prune -a

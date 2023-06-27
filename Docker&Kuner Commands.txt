@@ -22,3 +22,4 @@ kubectl config view
 --dashbord https://IP_MASTER_NODE/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
 
 --kubectl run test-netcore-simple-app --image=eugenemukhanov/kubertest:kubeappv1 --replicas=2 --port=80
+
